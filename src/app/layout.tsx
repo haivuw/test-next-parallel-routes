@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {mediaDetails}
-        {children}
+        <main className="flex min-h-screen flex-col items-center gap-6 justify-start p-24">
+          {children}
+          {mediaDetails}
+        </main>
       </body>
     </html>
   );
