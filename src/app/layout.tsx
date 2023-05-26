@@ -11,9 +11,11 @@ export const metadata = {
 export default function RootLayout({
   children,
   mediaDetails,
+  watch,
 }: {
   children: React.ReactNode;
   mediaDetails: React.ReactNode;
+  watch: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -21,6 +23,7 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col items-center gap-6 justify-start p-24">
           {children}
           {mediaDetails}
+          {watch}
         </main>
       </body>
     </html>
